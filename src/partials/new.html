@@ -1,0 +1,23 @@
+<div layout="row" layout-align="center center">
+  <div flex-xs flex-gt-xs="50">
+    <md-card>
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline pointer" ui-sref="newslist()">Add new article</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-content>
+      <md-input-container class="md-block">
+        <label>Title</label>
+        <input ng-model="article.title">
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label>Body</label>
+        <input ng-model="article.body">
+      </md-input-container>
+      <md-button md-no-ink class="md-raised md-primary" ng-click="sendItem(article)">Send</md-button>
+      <p ng-bind-html="newCallback" ng-if="newCallback"></p>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

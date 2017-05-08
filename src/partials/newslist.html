@@ -1,0 +1,23 @@
+<md-content>
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools _article pointer" ui-sref="new()" >
+            News  
+            <md-tooltip
+              md-direction="left">
+              Create a new article
+            </md-tooltip>
+        </h2>
+    </md-toolbar>
+    <md-content>
+        <md-list>
+            <md-list-item class="md-3-line" ng-repeat="n in news | orderBy:'-createdAt'" ui-sref="news({ id: n.id, title: replaceTitle(n.title) })"
+                aria-label="Link to {{n.title}}">
+                <div class="md-list-item-text">
+                    <h3 ng-bind-html="n.title"></h3>
+                    <p ng-bind-html="n.createdAt | date : 'dd.MM.yyyy'"></p>
+                </div>
+                <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-content>

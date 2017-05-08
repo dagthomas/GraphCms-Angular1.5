@@ -1,0 +1,40 @@
+/*!
+ * Stylesheet for GrapCMS Project
+ * https://github.com/dagthomas/GraphCMS-Wrapper-for-Angular-1.5
+ * @license MIT
+ */
+$darkenedwhite: #eee;
+
+html {
+  background: $darkenedwhite;
+}
+
+body {
+  height: initial;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+blockquote {
+  font-weight: bold;
+  &:before {
+    content: '" ';
+  } 
+}
+._article{
+  &:hover{
+  color: greenyellow!important;
+  }
+}

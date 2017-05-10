@@ -30,3 +30,6 @@ Go to [http://localhost:8080](http://localhost:8080) in your browser.
 ```
 * single run: `npm run build`
 * build files and watch: `npm run watch`
+```
+### Base source for Webpack
+https://github.com/kitconcept/webpack-starter-angular
